@@ -1,0 +1,228 @@
+/* ============================================
+   AgroManager Pro – Premium Admin Styles
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ---- Base ---- */
+.agromanager-wrap { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; max-width: 1400px; }
+.agromanager-wrap * { box-sizing: border-box; }
+
+/* ---- Page Header ---- */
+.agromanager-page-header {
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+    margin-bottom: 24px; padding: 20px 24px;
+    background: linear-gradient(135deg, #065f46 0%, #047857 50%, #059669 100%);
+    border-radius: 16px; color: #fff; box-shadow: 0 4px 24px rgba(6,95,70,0.3);
+}
+.agromanager-page-header h1 { color: #fff; margin: 0; font-size: 24px; font-weight: 700; text-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+.agromanager-dashboard-header { background: linear-gradient(135deg, #1e3a2f 0%, #065f46 40%, #047857 100%); }
+.agro-date { font-size: 14px; opacity: 0.85; font-weight: 400; }
+
+/* ---- Buttons ---- */
+.agro-btn {
+    display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px;
+    border: none; border-radius: 8px; font-size: 13px; font-weight: 600;
+    cursor: pointer; text-decoration: none; transition: all 0.2s ease;
+    font-family: 'Inter', sans-serif; line-height: 1.4;
+}
+.agro-btn:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+.agro-btn:active { transform: translateY(0); }
+.agro-btn-primary { background: linear-gradient(135deg, #059669, #047857); color: #fff; }
+.agro-btn-primary:hover { background: linear-gradient(135deg, #047857, #065f46); color: #fff; }
+.agro-btn-secondary { background: #f1f5f9; color: #334155; border: 1px solid #e2e8f0; }
+.agro-btn-secondary:hover { background: #e2e8f0; color: #1e293b; }
+.agro-btn-lg { padding: 12px 24px; font-size: 15px; border-radius: 10px; }
+.agro-btn-sm { padding: 4px 8px; font-size: 12px; border-radius: 6px; }
+.agro-btn-edit { background: #dbeafe; color: #1d4ed8; }
+.agro-btn-edit:hover { background: #bfdbfe; color: #1e40af; }
+.agro-btn-delete { background: #fee2e2; color: #dc2626; }
+.agro-btn-delete:hover { background: #fecaca; color: #b91c1c; }
+.agro-btn .dashicons { font-size: 16px; width: 16px; height: 16px; line-height: 16px; }
+
+/* ---- Filter Bar ---- */
+.agromanager-filter-bar { display: flex; gap: 10px; margin-bottom: 20px; padding: 16px; background: #fff; border-radius: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+.agromanager-filter-bar form { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; width: 100%; }
+.agro-search-input { padding: 8px 14px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 14px; flex: 1; min-width: 200px; font-family: 'Inter', sans-serif; transition: border-color 0.2s; }
+.agro-search-input:focus { outline: none; border-color: #059669; box-shadow: 0 0 0 3px rgba(5,150,105,0.12); }
+
+/* ---- Tables ---- */
+.agromanager-table-wrap { background: #fff; border-radius: 12px; box-shadow: 0 1px 6px rgba(0,0,0,0.06); overflow: hidden; }
+.agromanager-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.agromanager-table thead { background: linear-gradient(to right, #f8fafc, #f1f5f9); }
+.agromanager-table th { padding: 12px 16px; text-align: left; font-weight: 600; color: #475569; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 2px solid #e2e8f0; }
+.agromanager-table td { padding: 12px 16px; border-bottom: 1px solid #f1f5f9; color: #334155; vertical-align: middle; }
+.agromanager-table tbody tr { transition: background 0.15s; }
+.agromanager-table tbody tr:hover { background: #f0fdf4; }
+.agromanager-table tbody tr:last-child td { border-bottom: none; }
+
+/* ---- Badges ---- */
+.agro-badge {
+    display: inline-block; padding: 3px 10px; border-radius: 20px;
+    font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em;
+}
+.agro-badge-active, .agro-badge-operational, .agro-badge-income { background: #dcfce7; color: #15803d; }
+.agro-badge-planted, .agro-badge-growing { background: #d1fae5; color: #047857; }
+.agro-badge-planned { background: #e0f2fe; color: #0369a1; }
+.agro-badge-harvested { background: #fef3c7; color: #92400e; }
+.agro-badge-fallow, .agro-badge-maintenance { background: #fef9c3; color: #854d0e; }
+.agro-badge-rented { background: #dbeafe; color: #1d4ed8; }
+.agro-badge-inactive, .agro-badge-retired, .agro-badge-failed { background: #f1f5f9; color: #64748b; }
+.agro-badge-broken { background: #fee2e2; color: #dc2626; }
+.agro-badge-expense { background: #fee2e2; color: #dc2626; }
+
+/* ---- Quality Bar ---- */
+.agro-quality-bar { display: flex; align-items: center; gap: 8px; }
+.agro-quality-bar > div:first-child { width: 60px; height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden; position: relative; }
+.agro-quality-fill { height: 100%; background: linear-gradient(90deg, #ef4444, #f59e0b, #22c55e); border-radius: 4px; transition: width 0.3s; }
+.agro-quality-bar span { font-size: 12px; color: #64748b; font-weight: 600; }
+
+/* ---- Empty State ---- */
+.agromanager-empty-state { text-align: center; padding: 60px 20px; background: #fff; border-radius: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+.agromanager-empty-state h3 { margin: 16px 0 8px; color: #475569; font-size: 18px; }
+.agromanager-empty-state p { color: #94a3b8; }
+
+/* ---- Forms ---- */
+.agromanager-form { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 1px 6px rgba(0,0,0,0.06); }
+.agro-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.agro-form-full { grid-column: 1 / -1; }
+.agro-form-group { display: flex; flex-direction: column; gap: 6px; }
+.agro-form-group label { font-size: 13px; font-weight: 600; color: #374151; }
+.agro-input {
+    padding: 10px 14px; border: 1px solid #d1d5db; border-radius: 8px;
+    font-size: 14px; font-family: 'Inter', sans-serif; transition: all 0.2s;
+    background: #fff; color: #1f2937;
+}
+.agro-input:focus { outline: none; border-color: #059669; box-shadow: 0 0 0 3px rgba(5,150,105,0.12); }
+select.agro-input { appearance: auto; }
+textarea.agro-input { resize: vertical; }
+.agro-range { width: 100%; accent-color: #059669; }
+.agro-range-value { font-size: 18px; font-weight: 700; color: #059669; }
+.agro-form-actions { margin-top: 24px; padding-top: 20px; border-top: 1px solid #f1f5f9; }
+
+/* ---- Dashboard Grid ---- */
+.agro-dashboard-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.agro-dash-card {
+    background: #fff; border-radius: 16px; padding: 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); transition: all 0.25s ease;
+    position: relative; overflow: hidden;
+}
+.agro-dash-card:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
+.agro-dash-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, #059669, #10b981);
+}
+.agro-card-green::before { background: linear-gradient(90deg, #059669, #34d399); }
+.agro-card-emerald::before { background: linear-gradient(90deg, #047857, #6ee7b7); }
+.agro-card-amber::before { background: linear-gradient(90deg, #d97706, #fbbf24); }
+.agro-card-blue::before { background: linear-gradient(90deg, #2563eb, #60a5fa); }
+
+.agro-dash-card { display: flex; align-items: center; gap: 16px; }
+.agro-dash-icon { font-size: 36px; line-height: 1; }
+.agro-dash-value { font-size: 28px; font-weight: 700; color: #1e293b; line-height: 1.2; }
+.agro-dash-label { font-size: 13px; color: #64748b; font-weight: 500; margin-top: 2px; }
+
+/* Wide cards */
+.agro-card-wide { grid-column: span 3; flex-direction: column; align-items: stretch; }
+.agro-card-weather { grid-column: span 1; flex-direction: column; align-items: stretch; }
+.agro-card-alert { grid-column: span 2; flex-direction: column; align-items: stretch; }
+.agro-card-finance::before { background: linear-gradient(90deg, #059669, #0ea5e9); }
+.agro-card-weather::before { background: linear-gradient(90deg, #0ea5e9, #38bdf8); }
+.agro-card-alert::before { background: linear-gradient(90deg, #f59e0b, #ef4444); }
+
+.agro-dash-card h3 { margin: 0 0 16px; font-size: 16px; font-weight: 600; color: #1e293b; }
+
+/* Finance summary in dashboard */
+.agro-finance-summary { display: flex; gap: 20px; margin-bottom: 20px; flex-wrap: wrap; }
+.agro-fin-item { flex: 1; min-width: 140px; padding: 12px 16px; border-radius: 10px; background: #f8fafc; }
+.agro-fin-item span { display: block; font-size: 12px; color: #64748b; margin-bottom: 4px; }
+.agro-fin-item strong { font-size: 18px; }
+.agro-fin-income strong { color: #15803d; }
+.agro-fin-expense strong { color: #dc2626; }
+.agro-fin-profit strong { color: #059669; }
+.agro-fin-loss strong { color: #dc2626; }
+
+/* Service list */
+.agro-service-list { list-style: none; margin: 0; padding: 0; }
+.agro-service-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f1f5f9; font-size: 14px; }
+.agro-service-list li:last-child { border-bottom: none; }
+.agro-service-list li span { color: #f59e0b; font-weight: 600; }
+
+/* ---- Summary Cards (Finance page) ---- */
+.agro-summary-cards { display: grid; gap: 16px; margin-bottom: 20px; }
+.agro-summary-cards-3 { grid-template-columns: repeat(3, 1fr); }
+.agro-summary-card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.06); position: relative; overflow: hidden; }
+.agro-summary-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; }
+.agro-card-income::before { background: #22c55e; }
+.agro-card-expense::before { background: #ef4444; }
+.agro-card-profit::before { background: #0ea5e9; }
+.agro-card-loss::before { background: #dc2626; }
+.agro-summary-label { font-size: 13px; color: #64748b; margin-bottom: 6px; }
+.agro-summary-value { font-size: 24px; font-weight: 700; color: #1e293b; }
+.agro-card-income .agro-summary-value { color: #15803d; }
+.agro-card-expense .agro-summary-value { color: #dc2626; }
+.agro-card-profit .agro-summary-value { color: #0369a1; }
+.agro-card-loss .agro-summary-value { color: #dc2626; }
+.agro-amount-income { color: #15803d !important; }
+.agro-amount-expense { color: #dc2626 !important; }
+
+/* ---- Weather Styles ---- */
+.agro-weather-current {
+    display: flex; gap: 40px; align-items: center; flex-wrap: wrap;
+    background: linear-gradient(135deg, #0c4a6e, #0369a1, #0284c7);
+    border-radius: 16px; padding: 32px; color: #fff; box-shadow: 0 4px 20px rgba(3,105,161,0.3);
+}
+.agro-weather-main { text-align: center; min-width: 180px; }
+.agro-weather-icon { font-size: 64px; line-height: 1; display: block; margin-bottom: 8px; }
+.agro-weather-temp { font-size: 48px; font-weight: 700; }
+.agro-weather-desc { font-size: 16px; opacity: 0.9; margin-top: 4px; }
+.agro-weather-location { font-size: 14px; opacity: 0.75; margin-top: 8px; }
+.agro-weather-details { display: flex; gap: 24px; flex-wrap: wrap; }
+.agro-weather-detail { background: rgba(255,255,255,0.15); backdrop-filter: blur(8px); border-radius: 12px; padding: 16px 20px; min-width: 130px; text-align: center; }
+.agro-weather-detail span { display: block; font-size: 13px; opacity: 0.8; margin-bottom: 6px; }
+.agro-weather-detail strong { font-size: 20px; }
+
+/* Forecast */
+.agro-weather-forecast { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; }
+.agro-forecast-day {
+    background: #fff; border-radius: 12px; padding: 16px 12px; text-align: center;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06); transition: all 0.2s;
+}
+.agro-forecast-day:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
+.agro-forecast-name { font-weight: 600; font-size: 14px; color: #1e293b; }
+.agro-forecast-date { font-size: 12px; color: #94a3b8; margin: 2px 0 8px; }
+.agro-forecast-icon { font-size: 32px; margin: 8px 0; }
+.agro-forecast-temps { display: flex; justify-content: center; gap: 8px; font-size: 14px; margin: 6px 0; }
+.agro-temp-high { color: #dc2626; font-weight: 600; }
+.agro-temp-low { color: #3b82f6; font-weight: 500; }
+.agro-forecast-rain { font-size: 12px; color: #64748b; }
+
+/* Dashboard weather widget */
+.agro-widget-weather { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.agro-weather-icon-sm { font-size: 32px; }
+.agro-weather-loc { font-size: 12px; color: #94a3b8; }
+
+/* Text helpers */
+.agro-text-danger { color: #dc2626 !important; font-weight: 600; }
+.agro-text-warning { color: #d97706 !important; font-weight: 600; }
+
+/* Worklog form */
+.agro-worklog-form-wrap { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 1px 6px rgba(0,0,0,0.06); }
+.agro-worklog-form-wrap h3 { margin: 0 0 16px; color: #1e293b; }
+
+/* ---- Responsive ---- */
+@media (max-width: 1200px) {
+    .agro-dashboard-grid { grid-template-columns: repeat(2, 1fr); }
+    .agro-card-wide { grid-column: span 2; }
+    .agro-card-weather { grid-column: span 2; }
+    .agro-card-alert { grid-column: span 2; }
+}
+@media (max-width: 768px) {
+    .agro-dashboard-grid { grid-template-columns: 1fr; }
+    .agro-card-wide, .agro-card-weather, .agro-card-alert { grid-column: span 1; }
+    .agro-form-grid { grid-template-columns: 1fr; }
+    .agromanager-page-header { padding: 16px; }
+    .agro-weather-forecast { grid-template-columns: repeat(3, 1fr); }
+    .agro-summary-cards-3 { grid-template-columns: 1fr; }
+    .agro-weather-current { flex-direction: column; }
+}
