@@ -175,9 +175,3 @@ A plugin 6 egyedi táblát hoz létre aktiváláskor:
 ## 📄 Licenc
 
 Ez a projekt a [GPL v2 or later](https://www.gnu.org/licenses/gpl-2.0.html) licenc alatt áll.
-
----
-
-<p align="center">
-  Készítette ❤️-vel mezőgazdasági vállalkozásoknak
-</p>
